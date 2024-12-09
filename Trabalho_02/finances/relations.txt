@@ -1,0 +1,21 @@
+#Client:
+Tem uma lista de Account (one-to-many)
+Tem uma lista de Investment (one-to-many)
+
+#Account:
+Pertence a um Client (many-to-one)
+Tem uma lista de Transaction (one-to-many)
+
+#Transaction:
+Pertence a uma Account (many-to-one)
+
+#Investment:
+Pertence a um Client (many-to-one)
+Descrição das relações:
+
+Um Client pode ter multiplas Account e Investment.
+Cada Account pertence a um único Client e pode ter múltiplas Transaction.
+Cada Transaction pertence a uma única Account.
+Cada Investment pertence a um único Client.
+As relações são implementadas usando listas para as relações one-to-many e
+referências de objeto para as relações many-to-one.
